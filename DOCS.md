@@ -4,7 +4,7 @@
 
 - Chunk
 
-Creates a slice of elements split into groups the length of `size`. If `slize` can't be split evenly, the final chunk will be the remaining elements.
+Creates a `slice` of elements split into groups the length of `size`. If the `slice` can't be split evenly, the final chunk will be the remaining elements.
 
 ```go
 slice := []interface{}{1, 2, 3, 4}
