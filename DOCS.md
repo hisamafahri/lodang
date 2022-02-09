@@ -14,6 +14,18 @@ result := lodang.Chunk(slice, 3)
 // type: []interface{}
 ```
 
+- Compact
+
+Creates an `slice` with all falsey values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsey
+
+```go
+slice := []interface{}{0, false, nil, "", "a", 1, 2, 3, 4}
+result := lodang.Compact(slice)
+
+// result: [1 2 3 4]
+// type: []interface{}
+```
+
 ## License
 
 [MIT](LICENSE)
