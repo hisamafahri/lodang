@@ -1,13 +1,5 @@
 # Documentation
 
-To use this package, first install it in your project by running:
-
-```bash
-go get github.com/hisamafahri/lodang
-```
-
-## Usage
-
 ### Slices
 
 - Chunk
