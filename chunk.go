@@ -8,10 +8,10 @@ package lodang
  * @example
  *
  * Chunk([]interface{}{'a', 'b', 'c', 'd'}, 2)
- * // => [[]interface{}{'a', 'b'}, []interface{}{'c', 'd'}]
+ * // => [[a b] [c d]]
  *
  * chunk([]interface{}{'a', 'b', 'c', 'd'{}, 3)
- * // => [[]interface{}{'a', 'b', 'c'}, []interface{}{'d'}]
+ * // => [[a b c] [d]]
  */
 
 func Chunk(slice []interface{}, size uint) []interface{} {
