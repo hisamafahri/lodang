@@ -16,13 +16,26 @@ result := lodang.Chunk(slice, 3)
 
 - Compact
 
-Creates an `slice` with all falsey values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsey
+Creates a `slice` with all falsey values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsey
 
 ```go
 slice := []interface{}{0, false, nil, "", "a", 1, 2, 3, 4}
 result := lodang.Compact(slice)
 
 // result: [1 2 3 4]
+// type: []interface{}
+```
+
+- Compact
+
+Creates a new `slice` concatenating `slice` with any additional `slices`. Currently only support **two** `[]interface{}` type format.
+
+```go
+a := []interface{}{9}
+b := []interface{}{1, 2}
+result := lodang.Concat(a, b)
+
+// result: [9 1 2]
 // type: []interface{}
 ```
 
