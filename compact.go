@@ -10,7 +10,7 @@ import (
  * @example
  *
  * compact([]interface{}{0, 1, false, 2, '', 3})
- * // => [1, 2, 3]
+ * // => [1 2 3]
  */
 
 func Compact(slice []interface{}) []interface{} {
